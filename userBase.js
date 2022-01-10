@@ -14,8 +14,13 @@ function ajouter() {
         tab[cpt] = [name, firstName, login, mdp];
         result.innerHTML += "<p>" + `Nom : ${tab[cpt][0]}, Prénom : ${tab[cpt][1]}, Login : ${tab[cpt][2]}, Mot de passe : ${tab[cpt][3]}` + "</p>";
         cpt ++;
-        nbrCompte.innerHTML = `Il y a ${cpt} comptes utilisateur`;
+        if(cpt==1) {
+            nbrCompte.innerHTML = `Il y a ${cpt} compte utilisateur`;
+        } else {
+            nbrCompte.innerHTML = `Il y a ${cpt} comptes utilisateur`;
+        }
     } else {
         error.innerHTML = "Un champ est vide, veuillez le remplir";
     }
 }
+
