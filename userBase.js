@@ -12,7 +12,7 @@ function ajouter() {
 
     if(name != "" && firstName != "" && login != "" && mdp != ""){
         tab[cpt] = [name, firstName, login, mdp];
-        result.innerHTML = `Nom : ${tab[cpt][0]}, Prénom : ${tab[cpt][1]}, Login : ${tab[cpt][2]}, Mot de passe : ${tab[cpt][3]}`;
+        result.innerHTML += "<p>" + `Nom : ${tab[cpt][0]}, Prénom : ${tab[cpt][1]}, Login : ${tab[cpt][2]}, Mot de passe : ${tab[cpt][3]}` + "</p>";
         cpt ++;
         nbrCompte.innerHTML = `Il y a ${cpt} comptes utilisateur`;
     } else {
