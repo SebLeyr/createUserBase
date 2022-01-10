@@ -14,9 +14,9 @@ function ajouter() {
     if(name != "" && firstName != "" && login != "" && mdp != ""){
         tab[cpt] = user;
         cpt ++;
-        result.innerHTML (`Nom : ${name} Prénom : ${firstName} Login : ${login} Mot de passe : ${mdp}`);
-        nbrCompte.innerHTML (`Il y a ${cpt} comptes utilisateur`)
+        result.innerHTML = `Nom : ${name} Prénom : ${firstName} Login : ${login} Mot de passe : ${mdp}`;
+        nbrCompte.innerHTML = `Il y a ${cpt} comptes utilisateur`;
     } else {
-        error.innerHTML("Un champ est vide, veuillez le remplir")
+        error.innerHTML = "Un champ est vide, veuillez le remplir";
     }
 }
